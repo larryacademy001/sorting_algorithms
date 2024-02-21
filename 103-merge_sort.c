@@ -23,7 +23,8 @@ void sub_array_merge(int *sub_array, int *temp_buffer, size_t front_index,
 	print_array(sub_array + mid_index, back_index - mid_index);
 
 	for (i = front_index, j = mid_index; i < mid_index && j < back_index; k++)
-		temp_buffer[k] = (sub_array[i] < sub_array[j]) ? sub_array[i++] : sub_array[j++];
+		temp_buffer[k] = 
+	(sub_array[i] < sub_array[j]) ? sub_array[i++] : sub_array[j++];
 	for (; i < mid_index; i++)
 		temp_buffer[k++] = sub_array[i];
 	for (; j < back_index; j++)
@@ -44,7 +45,8 @@ void sub_array_merge(int *sub_array, int *temp_buffer, size_t front_index,
  * @front_index: Index indicating the start of the subarray to be sorted.
  * @back_index: Index indicating the end of the subarray to be sorted.
  */
-void recursive_merge_sort(int *sub_array, int *temp_buffer, size_t front_index, size_t back_index)
+void recursive_merge_sort(int *sub_array, int *temp_buffer,
+	size_t front_index, size_t back_index)
 {
 	size_t mid_index;
 
