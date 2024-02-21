@@ -67,5 +67,8 @@ void sub_array_merge(int *sub_array, int *temp_buffer, size_t front_index,
 	size_t mid_index, size_t back_index);
 void recursive_merge_sort(int *sub_array, int *temp_buffer,
 	size_t front_index, size_t back_index);
+void max_heap_main(int *array, size_t size,
+	size_t tree_base, size_t tree_root);
+void heap_sort(int *array, size_t size);
 
 #endif /* SORT_H */
