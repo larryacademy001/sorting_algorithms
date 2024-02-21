@@ -5,7 +5,8 @@
  * with the node that comes after it.
  * @head : A pointer to the head of a doubly-linked list of integers.
  * @tail: A pointer to the tail of the doubly-linked list.
- * @node_swap: A pointer to the node that needs to be swapped with the next node.
+ * @node_swap: A pointer to the node that needs to be
+ * swapped with the next node.
  */
 void swap_node_ahead(listint_t **head, listint_t **tail, listint_t **node_swap)
 {
@@ -31,9 +32,11 @@ void swap_node_ahead(listint_t **head, listint_t **tail, listint_t **node_swap)
  * with the node that comes before it.
  * @head: A pointer to the head of a doubly-linked list of integers.
  * @tail: A pointer to the tail of the doubly-linked list.
- * @node_swap: A pointer to the node that needs to be swapped with the previous node.
+ * @node_swap: A pointer to the node that needs to be
+ * swapped with the previous node.
  */
-void swap_node_behind(listint_t **head, listint_t **tail, listint_t **node_swap)
+void swap_node_behind(listint_t **head, listint_t **tail,
+	listint_t **node_swap)
 {
 	listint_t *temp = (*node_swap)->prev;
 
