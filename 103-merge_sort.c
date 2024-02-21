@@ -23,7 +23,7 @@ void sub_array_merge(int *sub_array, int *temp_buffer, size_t front_index,
 	print_array(sub_array + mid_index, back_index - mid_index);
 
 	for (i = front_index, j = mid_index; i < mid_index && j < back_index; k++)
-		temp_buffer[k] = 
+		temp_buffer[k] =
 	(sub_array[i] < sub_array[j]) ? sub_array[i++] : sub_array[j++];
 	for (; i < mid_index; i++)
 		temp_buffer[k++] = sub_array[i];
