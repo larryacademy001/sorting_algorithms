@@ -25,7 +25,8 @@ void swap_numbers(int *first_number, int *second_number)
  *
  * Return: returns the position of the pivot after partitioning.
  */
-int lomuto_partition_scheme(int *array, size_t size, int left_portion, int right_portion)
+int lomuto_partition_scheme(int *array, size_t size,
+	int left_portion, int right_portion)
 {
 	int *pivot, above, below;
 
@@ -68,7 +69,8 @@ void lomuto_sort(int *array, size_t size, int left_portion, int right_portion)
 
 	if (right_portion - left_portion > 0)
 	{
-		pivot_position = lomuto_partition_scheme(array, size, left_portion, right_portion);
+		pivot_position = lomuto_partition_scheme(array, size,
+			left_portion, right_portion);
 		lomuto_sort(array, size, left_portion, pivot_position - 1);
 		lomuto_sort(array, size, pivot_position + 1, right_portion);
 	}
