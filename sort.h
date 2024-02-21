@@ -61,5 +61,9 @@ void lomuto_sort(int *array, size_t size,
 	int left_portion, int right_portion);
 void swap_node_ahead(listint_t **head, listint_t **tail, listint_t **node_swap);
 void swap_node_behind(listint_t **head, listint_t **tail, listint_t **node_swap);
+void sub_array_merge(int *sub_array, int *temp_buffer, size_t front_index,
+	size_t mid_index, size_t back_index);
+void recursive_merge_sort(int *sub_array, int *temp_buffer,
+	size_t front_index, size_t back_index);
 
 #endif /* SORT_H */
