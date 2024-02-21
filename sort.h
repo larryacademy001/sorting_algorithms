@@ -51,4 +51,13 @@ void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 
+/* other functions */
+void swap_numbers(int *first_number, int *second_number);
+void nodes_swap(listint_t **head, listint_t **first_node,
+	listint_t *second_node);
+int lomuto_partition_scheme(int *array, size_t size,
+	int left_portion, int right_portion);
+void lomuto_sort(int *array, size_t size,
+	int left_portion, int right_portion);
+
 #endif /* SORT_H */
