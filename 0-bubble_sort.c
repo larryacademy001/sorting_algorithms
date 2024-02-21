@@ -8,7 +8,7 @@
 void swap_numbers(int *first_number, int *second_number)
 {
 	int temp;
-	
+
 	temp = *first_number;
 	*first_number = *second_number;
 	*second_number = temp;
