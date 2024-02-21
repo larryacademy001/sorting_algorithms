@@ -59,7 +59,7 @@ int lomuto_partition_scheme(int *array, size_t size,
 	int left_portion, int right_portion);
 void lomuto_sort(int *array, size_t size,
 	int left_portion, int right_portion);
-void swap_node_ahead(listint_t **list, listint_t **tail, listint_t **shaker);
-void swap_node_behind(listint_t **list, listint_t **tail, listint_t **shaker);
+void swap_node_ahead(listint_t **head, listint_t **tail, listint_t **node_swap);
+void swap_node_behind(listint_t **head, listint_t **tail, listint_t **node_swap);
 
 #endif /* SORT_H */
