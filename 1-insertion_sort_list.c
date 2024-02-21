@@ -23,13 +23,13 @@ void nodes_swap(listint_t **head, listint_t **first_node,
 }
 
 /**
- * prev_nodeion_sort_list - function that sorts a doubly linked list
+ * insertion_sort_list - function that sorts a doubly linked list
  * of integers in ascending order using the insertion sort algorithm
  * @list: a pointer to a pointer to a doubly linked list.
  *
  * Description:  Print the list after each time you swap two elements.
  */
-void prev_nodeion_sort_list(listint_t **list)
+void insertion_sort_list(listint_t **list)
 {
 	listint_t *current_node, *prev_node, *temp;
 
